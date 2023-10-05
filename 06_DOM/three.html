@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121;color:#fff;">
+
+    
+</body>
+<script>
+    const div=document.createElement("div")
+    div.className="main"
+    div.id=Math.round((Math.random()*10)+1)
+    div.setAttribute("title","genertaed code")
+    div.style.background="blue"
+    div.style.padding="5px"
+    // div.innerHTML="hello bachha"
+    // div.innerText="hello bachha"
+    const addtext=document.createTextNode("hello bachha")
+    div.appendChild(addtext)
+    document.body.appendChild(div)
+    console.log(div);
+</script>
+</html>

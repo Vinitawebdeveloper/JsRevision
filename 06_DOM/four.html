@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background:#212121; color:#fff">
+    <ul class="language" listitem()>
+        <li>javascript</li>
+
+    </ul>
+</body>
+<script>
+    function Addlanguage(lan) {
+    const li1=document.createElement("li")
+    // const addtext = document.createTextNode("python")
+    li1.innerHTML=`${lan}`
+    const lang=document.querySelector(".language")
+    lang.appendChild(li1)
+    // document.body.appendChild(li1)
+    console.log(li1);
+}
+function AddOptlanguage(lan) {
+    const li1=document.createElement("li")
+   li1.appendChild(document.createTextNode(lan))
+   document.querySelector('.language').appendChild(li1)
+}
+AddOptlanguage("java")
+
+// edit 
+const secondlang=document.querySelector("li:nth-child(2)")
+const newli=document.createElement("li")
+newli.textContent="mojo"
+secondlang.replaceWith(newli)
+
+// edit 
+// const firstlang=document.querySelector("li:nth-child(1)")
+// const newli1= document.createElement("li")
+// newli1.outerHTML="<li>typescript</li>"
+// firstlang.replaceWith(newli1)
+
+// remove 
+const lastName=document.querySelector("li:last-child")
+lastName.remove()
+</script>
+</html>
