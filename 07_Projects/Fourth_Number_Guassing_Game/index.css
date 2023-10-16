@@ -46,9 +46,41 @@
 
 }
 
-.wrapper{
+#wrapper{
+    height: 86vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-color: rgb(133, 134, 134);
+    /* border: 2px solid red; */
+    font-size: 1.2vw;
+    text-transform: capitalize;
+
+}
+
+#wrapper h1{
+    padding-bottom: 0.5vw;
+
+}
+
+.form{
+    padding: 0.9vw 0vw;
+    font-size: 1.5vw;
+}
+.form input{
+    padding: 1vw ;
+    border: 1px solid black;
+    border-radius: 1vw;
+    
+}
+
+#wrapper p{
+    padding: 0.5vw 0vw;
+
+}
+
+.resultParas{
+    padding: 0.5vw 0vw;
+
 }
