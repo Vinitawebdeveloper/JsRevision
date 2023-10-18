@@ -45,3 +45,10 @@
     0.3em 0.3em 1em rgba(200, 0, 0, 0.6);
 
 }
+
+button{
+    padding: 1vw 2.5vw;
+    margin: 1vw;
+    border-radius: 1vw;
+    border: 1px solid black;
+}
