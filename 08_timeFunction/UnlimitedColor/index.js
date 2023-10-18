@@ -8,9 +8,12 @@ const randomColor = function(){
 
 }
 const startChangingColor=function(){
+    console.log("start")
+    document.body.style.backgroundColor=randomColor()
 
 }
 const stopChangingColor=function(){
+    console.log("end");
 
 }
 console.log(randomColor());

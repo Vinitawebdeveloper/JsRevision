@@ -45,6 +45,9 @@
     0.3em 0.3em 1em rgba(200, 0, 0, 0.6);
 
 }
+body{
+    background-color: rgb(146, 145, 143);
+}
 
 button{
     padding: 1vw 2.5vw;
