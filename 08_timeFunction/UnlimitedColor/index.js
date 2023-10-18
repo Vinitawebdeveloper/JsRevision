@@ -7,13 +7,24 @@ const randomColor = function(){
     return color
 
 }
-const startChangingColor=function(){
-    console.log("start")
-    document.body.style.backgroundColor=randomColor()
 
+
+let IntervalId;
+const startChangingColor=function(){
+    IntervalId =setInterval( changeBgColor,1000);
+    function changeBgColor() {
+        document.body.style.backgroundColor=randomColor()
+    }
+    
+    console.log("start")
 }
+
+
+
 const stopChangingColor=function(){
     console.log("end");
+    clearInterval(IntervalId)
+    IntervalId=null
 
 }
 console.log(randomColor());
